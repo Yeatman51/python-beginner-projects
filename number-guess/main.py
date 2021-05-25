@@ -6,10 +6,10 @@ def guess(x):
     while guess != random_number:
         guess = int(input(f'Please guess a number between 1 and {x}: '))
         if guess < random_number:
-            print('Sorry guess again' + guess + 'is too low')
+            print(f'Sorry guess again {guess} is too low')
         elif guess > random_number:
-            print('Sorry guess again' + guess + 'is too hight')
+            print(f'Sorry guess again {guess} is too hight')
 
-print(f'Congratulations you guessed the correct number {random_number}')
+    print(f'Congratulations you guessed the correct number {random_number}')
 
 guess(10)
